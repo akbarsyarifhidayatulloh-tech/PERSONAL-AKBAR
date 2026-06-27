@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhamad Akbar Syarifulloh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Poppins", sans-serif; background: #0f0f0f; color: #f0f0f0; min-height: 100vh; }
+    nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 6%; background: #151515; border-bottom: 1px solid #222; position: sticky; top: 0; z-index: 99; }
+    .nav-brand { font-size: 1rem; font-weight: 600; color: #ff4444; }
+    .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+    .nav-links a { font-size: 0.82rem; color: #aaa; text-decoration: none; transition: color 0.2s; }
+    .nav-links a:hover { color: #ff4444; }
+    .hero { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 4rem 6% 3rem; gap: 1.25rem; }
+    .profile-img { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; object-position: center top; border: 3px solid #ff4444; box-shadow: 0 0 24px rgba(255,68,68,0.35); }
+    .hero h1 { font-size: clamp(1.4rem, 5vw, 2rem); font-weight: 700; line-height: 1.2; color: #fff; }
+    .hero h1 span { color: #ff4444; }
+    .hero-sub { font-size: 0.85rem; color: #888; line-height: 1.7; max-width: 500px; }
+    .section { padding: 2.5rem 6%; }
+    .section-title { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #ff4444; margin-bottom: 1.25rem; }
+    .info-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 0.85rem; }
+    .info-card { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 10px; padding: 1rem 1.1rem; }
+    .info-card .label { font-size: 0.68rem; color: #666; margin-bottom: 0.3rem; text-transform: uppercase; letter-spacing: 0.06em; }
+    .info-card .value { font-size: 0.9rem; font-weight: 500; color: #eee; }
+    .desc-box { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 10px; padding: 1.25rem 1.4rem; font-size: 0.88rem; color: #ccc; line-height: 1.75; }
+    .hobby-tag { display: inline-flex; align-items: center; gap: 0.4rem; background: #1f1f1f; border: 1px solid #333; border-radius: 20px; padding: 0.4rem 0.9rem; font-size: 0.8rem; color: #ddd; margin: 0.3rem; }
+    .sosmed-list { display: flex; flex-direction: column; gap: 0.75rem; }
+    .sosmed-btn { display: flex; align-items: center; gap: 0.85rem; background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 10px; padding: 0.85rem 1.1rem; text-decoration: none; color: #eee; font-size: 0.875rem; transition: border-color 0.2s, background 0.2s; }
+    .sosmed-btn:hover { border-color: #ff4444; background: #1f1515; }
+    .sosmed-icon { width: 34px; height: 34px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; }
+    .ig-icon { background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af); }
+    .tt-icon { background: #010101; border: 1px solid #333; }
+    .sosmed-name { font-weight: 500; }
+    .sosmed-handle { font-size: 0.75rem; color: #666; }
+    footer { text-align: center; padding: 2rem; font-size: 0.75rem; color: #444; border-top: 1px solid #1e1e1e; margin-top: 1rem; }
+    footer span { color: #ff4444; }
+    @media (max-width: 480px) { .nav-links { display: none; } .info-grid { grid-template-columns: 1fr 1fr; } }
+  </style>
+</head>
+<body>
+  <nav>
+    <span class="nav-brand">Akbar.</span>
+    <ul class="nav-links">
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#hobi">Hobi</a></li>
+      <li><a href="#sosmed">Sosial Media</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <!-- Ganti src di bawah dengan path foto kamu, contoh: src="foto.jpg" -->
+    <img class="profile-img" src="1000791780.jpg" alt="Foto Profil Akbar" />
+    <h1>Muhamad Akbar<br><span>Syarifulloh</span></h1>
+    <p class="hero-sub">halo saya muhamad akbar syarifulloh saya baru belajar ngengcoding maaf kalau jelak dan sangat pemula.saya ingin belajar karena sepertinya seru dan menyenangkan bercana hehe.oh ya tahun ini saya berkuliah di jurusan  teknik informatika sepertinya jurusan itu harus bisa mengcoding makanya saya belajar sekian terimakasih </p>
+  </div>
+
+  <div class="section" id="tentang">
+    <p class="section-title">Tentang Saya</p>
+    <div class="info-grid">
+      <div class="info-card"><div class="label">Nama Lengkap</div><div class="value">Muhamad Akbar Syarifulloh</div></div>
+      <div class="info-card"><div class="label">Tanggal Lahir</div><div class="value">23 Juni 2008</div></div>
+      <div class="info-card"><div class="label">Umur</div><div class="value">18 Tahun</div></div>
+      <div class="info-card"><div class="label">Tempat Tinggal</div><div class="value">Nganjuk, Jawa Timur</div></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <p class="section-title">Deskripsi</p>
+    <div class="desc-box">
+      Halo, nama saya <strong style="color:#fff">Muhamad Akbar Syarifulloh</strong>. Saya seorang pelajar yang baru mulai belajar dunia coding, dimulai dari HTML. Saya belajar secara otodidak lewat tutorial dari AI maupun YouTube. Walaupun masih pemula, saya semangat untuk terus belajar dan mengembangkan kemampuan di bidang teknologi dan web development. Terima kasih sudah mampir ke website saya! 🙏
+    </div>
+  </div>
+
+  <div class="section" id="hobi">
+    <p class="section-title">Hobi</p>
+    <div>
+      <span class="hobby-tag">🎮 Main Game</span>
+      <span class="hobby-tag">💻 Belajar Coding</span>
+      <span class="hobby-tag">📺 Nonton YouTube</span>
+      <span class="hobby-tag">🤖 Eksplorasi AI</span>
+    </div>
+  </div>
+
+  <div class="section" id="sosmed">
+    <p class="section-title">Media Sosial</p>
+    <div class="sosmed-list">
+      <a class="sosmed-btn" href="https://www.instagram.com/syarifulloh_moh?igsh=MXhiaXAzaTN4c2EwNQ==" target="_blank" rel="noopener">
+        <div class="sosmed-icon ig-icon">📸</div>
+        <div><div class="sosmed-name">Instagram</div><div class="sosmed-handle">@syarifulloh_moh</div></div>
+      </a>
+      <a class="sosmed-btn" href="https://www.tiktok.com/@gemoyman0912?_r=1&_t=ZS-97Xvlyd04iV" target="_blank" rel="noopener">
+        <div class="sosmed-icon tt-icon">🎵</div>
+        <div><div class="sosmed-name">TikTok</div><div class="sosmed-handle">@gemoyman0912</div></div>
+      </a>
+    </div>
+  </div>
+
+  <footer>Dibuat dengan <span>♥</span> oleh Akbar · 2026</footer>
+</body>
+</html>
